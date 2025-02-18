@@ -220,9 +220,9 @@
                             <label class="form-check-label" for="rememberMe">Remember</label>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary">Login</button><br><br>
                         </div>
-                        <div class="text-center">Don't have an account? 
+                        <div>Don't have an account? 
                             <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Sing up here</a><br>
                         </div>
                     </form>
@@ -236,21 +236,35 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="registerModalLabel">Crear Cuenta</h5>
+                    <h5 class="modal-title" id="registerModalLabel">Sing up</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-3">
-                            <label for="registerEmail" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="registerEmail" placeholder="nombre@ejemplo.com">
+                        <div class="Name">
+                            <div>
+                                <label for="Firstname" class="form-label"></label>
+                                <input type="text" class="form-control" id="Firstname" placeholder="Fisrt Name">
+                            </div>
+                            <div>
+                                <label for="Lastname" class="form-label"></label>
+                                <input type="text" class="form-control" id="Lastname" placeholder="Last Name">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="registerPassword" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="registerPassword" placeholder="********">
+                        <div>
+                            <label for="registerEmail" class="form-label"></label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Your Email">
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-success">Registrarse</button>
+                        <div>
+                            <label for="Registerpassword" class="form-label"></label>
+                            <input type="password" class="form-control" id="Registerpassword" placeholder="Password">
+                        </div>
+                        <div>
+                            <label for="Confirmpassword" class="form-label"></label>
+                            <input type="password" class="form-control" id="Confirmpassword" placeholder="Confirm Password">
+                        </div>
+                        <div style="text-align: end;">
+                            <button type="submit" class="btn btn-success">Sing Up</button>
                         </div>
                     </form>
                 </div>

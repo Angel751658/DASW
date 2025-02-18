@@ -13,3 +13,8 @@ body {
 .search-bar{
     width: 350px;
 }
+
+.Name{
+    display: flex;
+    justify-content: space-between;
+}
