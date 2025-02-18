@@ -1,0 +1,20 @@
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; 
+}
+
+body {
+    padding-top: 56px;
+}
+
+.search-bar{
+    width: 300px;
+}
+
+.Name{
+    display: flex;
+    justify-content: space-between;
+}
