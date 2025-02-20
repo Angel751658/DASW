@@ -18,3 +18,13 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 350px;
+}
