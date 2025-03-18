@@ -1,11 +1,12 @@
-class ProductException extends Error {
+import { generateUUID } from './utils.js';
+export class ProductException extends Error {
     constructor(message) {
         super(message);
         this.name = "ProductException";
     }
 }
 
-class Product {
+export class Product {
     #uuid;
 
     constructor(title, description, imageUrl, unit, stock, pricePerUnit, category) {

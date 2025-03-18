@@ -1,18 +1,20 @@
-class ShoppingCartException extends Error {
+import { getProductById } from './data_handler.js';
+
+export class ShoppingCartException extends Error {
     constructor(message) {
         super(message);
         this.name = "ShoppingCartException";
     }
 }
 
-class ProductProxy {
+export class ProductProxy {
     constructor(productUuid, amount) {
         this.productUuid = productUuid;
         this.amount = amount;
     }
 }
 
-class ShoppingCart {
+export class ShoppingCart {
     #proxies = [];
     #products = [];
 
