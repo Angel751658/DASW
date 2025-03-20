@@ -1,4 +1,5 @@
 import { generateUUID } from './utils.js';
+
 export class ProductException extends Error {
     constructor(message) {
         super(message);
@@ -40,7 +41,7 @@ export class Product {
         return this._stock;
     }
     set pricePerUnit(value) {
-        if (value < 0) throw new ProductException("El precio por unidad no puede ser negativo.");
+        if (value < 0) throw new ProductException("El precio no puede ser negativo.");
         this._pricePerUnit = value;
     }
     get pricePerUnit() {
@@ -60,7 +61,7 @@ export class Product {
                 obj.category
             );
         } catch (error) {
-            throw new ProductException("Error al convertir JSON en Producto.");
+            throw new ProductException("Error al convertir JSON");
         }
     }
 
@@ -89,15 +90,24 @@ export class Product {
     }
 
     toHTML() {
-        return `
-            <div class="product">
-                <h3>${this.title}</h3>
-                <p>${this.description}</p>
-                <img src="${this.imageUrl}" alt="${this.title}" style="width:100px;">
-                <p>Precio: $${this.pricePerUnit} / ${this.unit}</p>
-                <p>Stock: ${this.stock}</p>
-                <p>Categoría: ${this.category}</p>
-            </div>
-        `;
+        return `<div class="product">
+                    <h3>${this.title}</h3>
+                    <p>${this.description}</p>
+                    <img src="${this.imageUrl}" alt="${this.title}" style="width:100px;">
+                    <p>Precio: $${this.pricePerUnit} / ${this.unit}</p>
+                    <p>Stock: ${this.stock}</p>
+                    <p>Categoría: ${this.category}</p>
+                </div>`;            
     }
 }
+
+
+
+
+
+
+
+
+
+
+

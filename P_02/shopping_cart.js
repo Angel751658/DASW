@@ -3,7 +3,7 @@ import { getProductById } from './data_handler.js';
 export class ShoppingCartException extends Error {
     constructor(message) {
         super(message);
-        this.name = "ShoppingCartException";
+        this.name = "CartException";
     }
 }
 
@@ -29,9 +29,12 @@ export class ShoppingCart {
 
     updateItem(productUuid, newAmount) {
         const proxy = this.#proxies.find(proxy => proxy.productUuid === productUuid);
-        if (!proxy) throw new ShoppingCartException("Producto no encontrado en el carrito.");
+        if (!proxy) 
+            throw new ShoppingCartException("Producto no encontrado en el carrito.");
+        
+        if (newAmount < 0) 
+            throw new ShoppingCartException("La cantidad no puede ser negativa.");
 
-        if (newAmount < 0) throw new ShoppingCartException("La cantidad no puede ser negativa.");
         if (newAmount === 0) {
             this.removeItem(productUuid);
         } else {
@@ -50,3 +53,14 @@ export class ShoppingCart {
         }, 0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
