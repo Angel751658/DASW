@@ -52,9 +52,19 @@ export class ShoppingCart {
             return total + (product ? product.pricePerUnit * proxy.amount : 0);
         }, 0);
     }
-}
 
-
+    showCart() {
+        return this.#proxies.map(proxy => {
+            const product = getProductById(proxy.productUuid);
+            return {
+                nombre: product?.title || "Producto no encontrado",
+                cantidad: proxy.amount,
+                precioUnitario: product?.pricePerUnit || 0,
+                total: product ? product.pricePerUnit * proxy.amount : 0
+            };
+        });
+    }
+}    
 
 
 
