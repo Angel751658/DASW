@@ -1,16 +1,14 @@
-import express from 'express';
-import fs from 'fs';
-
 const express = require('express');
 const fs = require('fs');
 const app = express();
-app.use(express.json());  // Middleware para parsear JSON
-const port = 3000;
+
+app.use(express.json());
+
+// Cargar productos desde el archivo
+let products = JSON.parse(fs.readFileSync('./app/data/products.json'));
 
 app.get('/', (req, res) => {
-    res.send('e-commerce app práctica 3');
+  res.send('e-commerce app práctica 3');
 });
 
-app.listen(port, () => {
-    console.log(`Servidor levantado en http://localhost:${port}`);
-});
+app.listen(3000, () => console.log('Server running on port 3000'));
