@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "uuid": "49156122-6155-4309-8168-a4be85e800db",
+    "imageUrl": "https://m.media-amazon.com/images/I/712YYjIJ9sL._AC_UF894,1000_QL80_.jpg",
+    "title": "Absolute Carnage",
+    "description": "Comic Absolute Carnage.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 300,
+    "stock": 10
+  },
+  {
+    "uuid": "dde651f6-43a1-430a-932a-ea8f6061fbc0",
+    "imageUrl": "https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/crisis-on-infinite-earths.jpg?q=49&fit=crop&w=480&dpr=2",
+    "title": "Crisis on Infinite Earths",
+    "description": "Comic Crisis on Infinite Earths de DC.",
+    "unit": "pieza",
+    "category": "DC",
+    "pricePerUnit": 400,
+    "stock": 10
+  },
+  {
+    "uuid": "d09457cd-4cb2-4fde-9d71-e38b613cf6bf",
+    "imageUrl": "https://gonkbonk.com/_next/image?url=https%3A%2F%2Fd6fmx7z4dqmn1.cloudfront.net%2Finfinity-gauntlet-1-cover-GONKBONK-1024x1555.webp&w=1080&q=75",
+    "title": "The Infinity Gauntlet",
+    "description": "Comic The Infinity Gauntlet.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 450,
+    "stock": 10
+  },
+  {
+    "uuid": "53914de5-f836-4368-b355-6a7fd7f08cc9",
+    "imageUrl": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/511307b2f1200/clean.jpg",
+    "title": "Civil War",
+    "description": "Conflicto entre héroes de Marvel.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 400,
+    "stock": 10
+  },
+  {
+    "uuid": "a188dee7-5c60-46f2-99b6-c900496cb8d4",
+    "imageUrl": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/10/598363848588e/clean.jpg",
+    "title": "Amazing Fantasy #15",
+    "description": "Primera aparición de Spider-Man.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 500,
+    "stock": 10
+  },
+  {
+    "uuid": "8c59d03d-d8a9-414b-bd1e-f01b4458c832",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixjYBEjUYRh9ztlJK7Lfjnkka3jyC7rFC8g28trMPMVxPCKn3SEMrD7q5K6Or2qJv-x3hziGAymRTBOlJRz2rg2pkoszyDWz1DQ4Ss06x6x09nzeqqcd5JSyKlM4NL67AlLPPsyTO3xnc/s1600/flashpoint.jpg",
+    "title": "Flashpoint",
+    "description": "Comic Flashpoint.",
+    "unit": "pieza",
+    "category": "DC",
+    "pricePerUnit": 280,
+    "stock": 10
+  },
+  {
+    "uuid": "932654d4-36a7-4f59-acac-082e67249926",
+    "imageUrl": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/60/5939990e7d1ec/clean.jpg",
+    "title": "Old Man Logan",
+    "description": "Comic Old Man Logan.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 500,
+    "stock": 20
+  },
+  {
+    "uuid": "365a2950-bda0-4735-a416-a47988e0992e",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1346331835i/96358.jpg",
+    "title": "Batman: The Killing Joke",
+    "description": "Comic Batman: The Killing Joke.",
+    "unit": "pieza",
+    "category": "DC",
+    "pricePerUnit": 350,
+    "stock": 10
+  },
+  {
+    "uuid": "fcf25c36-8876-419b-9081-0377b4d8ed8b",
+    "imageUrl": "https://static1.srcdn.com/wordpress/wp-content/uploads/sharedimages/2024/07/batman-under-the-red-hood-deluxe-edition-comic-cover.jpg?q=49&fit=crop&w=480&dpr=2",
+    "title": "Batman: Under the Red Hood",
+    "description": "Comic Batman: Under the Red Hood.",
+    "unit": "pieza",
+    "category": "DC",
+    "pricePerUnit": 300,
+    "stock": 10
+  },
+  {
+    "uuid": "9f6b34e1-deba-4b44-a303-4bbb776863e0",
+    "imageUrl": "https://gonkbonk.com/_next/image?url=https%3A%2F%2Fd6fmx7z4dqmn1.cloudfront.net%2Fspider-man-kravens-last-hunt-trade-paperback-cover-GONKBONK-1024x1586.webp&w=1080&q=75",
+    "title": "Spider-man: Kraven's Last Hunt",
+    "description": "Comic Kraven's Last Hunt.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 315,
+    "stock": 10
+  }
+]

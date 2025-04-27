@@ -1,4 +1,4 @@
-// Practica3/server.js
+// server.js (raíz de Practica3)
 const express = require('express');
 const path = require('path');
 const dataHandler = require('./app/controllers/data_handler');
@@ -7,29 +7,25 @@ const adminRouter = require('./app/routes/admin_products');
 
 const app = express();
 
-// Cargar productos desde data/products.json
+// Carga inicial de productos
 dataHandler.loadProducts();
 
 // Middleware para parsear JSON
 app.use(express.json());
 
-// Rutas para servir las vistas de la Parte 1
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'app/views/home.html'));
-});
-app.get('/home', (req, res) => {
+// Servir estáticos desde app/views
+app.use(express.static(path.join(__dirname, 'app/views')));
+
+// Vistas HTML
+app.get(['/', '/home'], (req, res) => {
   res.sendFile(path.join(__dirname, 'app/views/home.html'));
 });
 app.get('/shopping_cart', (req, res) => {
   res.sendFile(path.join(__dirname, 'app/views/shopping_cart.html'));
 });
 
-// API Routers
+// API
 app.use('/products', productsRouter);
 app.use('/admin/products', adminRouter);
 
-// Iniciar servidor
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
+app.listen(3000, () => console.log('Server running on http://localhost:3000'));
