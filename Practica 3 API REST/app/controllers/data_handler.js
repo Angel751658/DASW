@@ -1,4 +1,3 @@
-// Practica3/app/controllers/data_handler.js
 const fs = require('fs');
 const path = require('path');
 const utils = require('./utils');

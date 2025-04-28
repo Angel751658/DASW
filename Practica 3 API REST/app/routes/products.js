@@ -1,9 +1,8 @@
-// Practica3/app/routes/products.js
 const express = require('express');
 const router = express.Router();
 const dh = require('../controllers/data_handler');
 
-// GET /products?query=...
+// Funciones
 router.get('/', (req, res) => {
   try {
     const list = req.query.query ? dh.findProducts(req.query.query) : dh.getProducts();
@@ -13,7 +12,6 @@ router.get('/', (req, res) => {
   }
 });
 
-// GET /products/:id
 router.get('/:id', (req, res) => {
   try {
     const prod = dh.getProductById(req.params.id);
@@ -23,7 +21,6 @@ router.get('/:id', (req, res) => {
   }
 });
 
-// POST /products/cart
 router.post('/cart', (req, res) => {
   if (!Array.isArray(req.body)) {
     return res.status(400).json({ error: 'Body debe ser un arreglo' });
@@ -37,6 +34,7 @@ router.post('/cart', (req, res) => {
 });
 
 module.exports = router;
+
 
 
 

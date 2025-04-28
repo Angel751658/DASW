@@ -1,4 +1,3 @@
-// Genera un UUID v4 sin depender de librerías externas.
 function generateUUID() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
     const r = Math.random() * 16 | 0;
