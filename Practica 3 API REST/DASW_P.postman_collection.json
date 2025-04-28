@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "4ea1c695-fae1-4ece-a217-195c0b6a0aea",
+		"name": "DASW_P",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43083822"
+	},
+	"item": [
+		{
+			"name": "GET /products ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /admin/products/cart",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imageUrl\": \"https://static1.srcdn.com/wordpress/wp-content/uploads/2024/07/young-justice-book-one-dc-comic-cover-art.jpg?q=49&fit=crop&w=480&dpr=2\",\r\n    \"title\": \"Young Justice\",\r\n    \"description\": \"Comic Young Justice de DC.\",\r\n    \"unit\": \"pieza\",\r\n    \"category\": \"DC\",\r\n    \"pricePerUnit\": 250,\r\n    \"stock\": 10\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products/:id ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Middleware de autenticar ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/products/53914de5-f836-4368-b355-6a7fd7f08cc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products",
+						"53914de5-f836-4368-b355-6a7fd7f08cc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /admin/products ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imageUrl\": \"https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/511307b2f1200/clean.jpg\",\r\n    \"title\": \"Civil War\",\r\n    \"description\": \"Conflicto entre héroes de Marvel.\",\r\n    \"unit\": \"pieza\",\r\n    \"category\": \"Marvel\",\r\n    \"pricePerUnit\": 400,\r\n    \"stock\": 10\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /admin/products/:id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pricePerUnit\": 300,\r\n  \"stock\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/products/49156122-6155-4309-8168-a4be85e800db",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products",
+						"49156122-6155-4309-8168-a4be85e800db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /admin/products:id ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/admin/products/53914de5-f836-4368-b355-6a7fd7f08cc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products",
+						"53914de5-f836-4368-b355-6a7fd7f08cc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /home",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /shopping_cart",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shopping_cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shopping_cart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

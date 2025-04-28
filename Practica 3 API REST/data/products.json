@@ -30,16 +30,6 @@
     "stock": 10
   },
   {
-    "uuid": "53914de5-f836-4368-b355-6a7fd7f08cc9",
-    "imageUrl": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/511307b2f1200/clean.jpg",
-    "title": "Civil War",
-    "description": "Conflicto entre héroes de Marvel.",
-    "unit": "pieza",
-    "category": "Marvel",
-    "pricePerUnit": 400,
-    "stock": 10
-  },
-  {
     "uuid": "a188dee7-5c60-46f2-99b6-c900496cb8d4",
     "imageUrl": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/10/598363848588e/clean.jpg",
     "title": "Amazing Fantasy #15",
@@ -97,6 +87,26 @@
     "unit": "pieza",
     "category": "Marvel",
     "pricePerUnit": 315,
+    "stock": 10
+  },
+  {
+    "uuid": "f1608934-38a9-4240-80f8-2143fa4e1bb3",
+    "imageUrl": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/07/young-justice-book-one-dc-comic-cover-art.jpg?q=49&fit=crop&w=480&dpr=2",
+    "title": "Young Justice",
+    "description": "Comic Young Justice de DC.",
+    "unit": "pieza",
+    "category": "DC",
+    "pricePerUnit": 250,
+    "stock": 10
+  },
+  {
+    "uuid": "a2fd9084-90b0-4cf4-9697-746d4f1a3eaf",
+    "imageUrl": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/f0/511307b2f1200/clean.jpg",
+    "title": "Civil War",
+    "description": "Conflicto entre héroes de Marvel.",
+    "unit": "pieza",
+    "category": "Marvel",
+    "pricePerUnit": 400,
     "stock": 10
   }
 ]
