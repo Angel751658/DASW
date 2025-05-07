@@ -9,3 +9,11 @@ router.put('/:email', userController.updateUserByEmail);
 router.delete('/:email', userController.deleteUserByEmail);
 
 module.exports = router;
+
+
+
+
+
+
+
+
